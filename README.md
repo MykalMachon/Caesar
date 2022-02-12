@@ -1,2 +1,2 @@
-# flask-celery
-a flask &amp; celery starter with docker 
+# Caesar
+a flask and celery stater built with docker & docker-compose.
