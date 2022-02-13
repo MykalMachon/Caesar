@@ -13,4 +13,4 @@ ENV TZ=America/Los_Angeles
 COPY caesar caeser
 
 EXPOSE 5000
-ENTRYPOINT gunicorn --workers=5 --bind=0.0.0.0:5000 caesar:app --reload
+ENTRYPOINT celery -A caeser.app.celery worker --loglevel=INFO & gunicorn --workers=5 --bind=0.0.0.0:5000 caesar:app --reload
