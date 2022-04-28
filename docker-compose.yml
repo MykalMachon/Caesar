@@ -1,7 +1,18 @@
 version: '3.9'
 services:
   caesar:
-    build: .
+    build:
+      context: .
+      dockerfile: ./dockerfile.prod
+    ports:
+      - '5000:5000'
+    environment:
+      - SECRET
+      - REDIS_PASS
+  caesar_dev:
+    build:
+      context: .
+      dockerfile: ./dockerfile.dev
     ports:
       - '5000:5000'
     volumes:
