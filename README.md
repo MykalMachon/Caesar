@@ -22,11 +22,11 @@ There are a few things you're going to have to do regardless of if you're runnin
 
 ### Development Mode
 
-Run the command `docker-compose up caeser_dev redis`, this will start the dev server, and a redis cache
+Run the command `docker-compose up caesar_dev redis`, this will start the dev server, and a redis cache
 
 ### Production Mode
 
-Run the command `docker-compose up caeser_prod redis`, this will start the prod server, and a redis cache.
+Run the command `docker-compose up caesar_prod redis`, this will start the prod server, and a redis cache.
 
 
 ## Questions?
